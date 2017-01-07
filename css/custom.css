@@ -1,0 +1,16 @@
+body {
+    background-image : url("file:///D:/RailwayReservationSystem/images/Background.jpg");
+    background-size : cover;
+    background-repeat : no-repeat;
+}
+.container {
+    background-color : grey;
+    height : 500px;
+    width : 700px;
+    margin-left : auto;
+    margin-right : auto;
+}
+.transparent {
+    opacity : 0.4;
+    /*filter : alpha(opacity=80);*/
+}
