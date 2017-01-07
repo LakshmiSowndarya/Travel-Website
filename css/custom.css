@@ -4,13 +4,64 @@ body {
     background-repeat : no-repeat;
 }
 .container {
-    background-color : grey;
-    height : 500px;
-    width : 700px;
+    background : rgba(138, 133, 133, 0.4);
+    height : 250px;
+    width : 500px;
     margin-left : auto;
     margin-right : auto;
+    padding : 10px;
+    text-align:center;
+    margin-top : 100px;
 }
-.transparent {
-    opacity : 0.4;
-    /*filter : alpha(opacity=80);*/
+
+.input-style input{
+    display : block;
+    padding : 6px 12px;
+    font-size : 14px;
+    line-height : 1.428571429;
+    vertical-align : middle;
+    border-radius : 4px;
+    margin : 0 auto;
+}
+
+.input-text{
+    background-color : #fff;
+    border : 1px solid #ccc;
+    color : #555;
+}
+
+.twitter-typeahead {
+    width : 100%;
+}
+
+h1.heading_delta {
+    font-size : 22px;
+    font-weight : normal;
+    margin-top : 8px;
+    margin-bottom : 8px;
+    padding-bottom : 5px;
+    color : #fff;
+}
+
+.button-submit {
+    float : right;
+    background-color : #eb753a!important;
+    color : white!important;
+    border : 1px solid #eb753a!important;
+    width : 100px;
+    height: 45px;
+    margin-top : 25px!important
+}
+
+.forgot {
+    float : left;
+}
+
+.RobotoLight {
+    font-family: 'RobotoLight',Arial,Helvetica,sans-serif;
+}
+
+a{
+    text-decoration : none;
+    color : #8c6b71;
 }
