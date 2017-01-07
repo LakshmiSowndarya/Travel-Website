@@ -4,10 +4,32 @@
     <title> Railway E-Booking </title>
     <link rel="icon" href="file:///D:/RailwayReservationSystem/images/iconoftitle.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="file:///D:/RailwayReservationSystem/css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="file:///D:/RailwayReservationSystem/HomeController.js"></script>
 </head>
-<body >
-<div class="container transparent">
-    <h1>Railway Reservation System</h1>
+<body ng-app="railway" ng-controller="homeController">
+<div class="container">
+    <h1 class="heading_delta RobotoLight">Sign in to Railway Reservation System</h1>
+    <br/>
+    <div ng-show="!newUser && !forgot">
+        <form>
+            <span class="input-style">
+                <input type="text" name="name" class="input-text" placeholder="Username"><br/>
+                <input type="text" name="password" class="input-text" placeholder="Password"><br/>
+                <div class="forgot">
+                    <p><a ng-click="forgot=true;">Forgot password?</a></p>
+                    <p><a ng-click="newUser=true">New User? Create an account</a></p>
+                </div>
+                 <input type="submit" ng-click="showSuccess();" class="button-submit" name="Login">
+            </span>
+        </form>
+    </div>
+    <div ng-show="newUser">
+        New User
+    </div>
+    <div ng-show="forgot">
+        Forgot Password
+    </div>
 </div>
 </body>
 </html>
