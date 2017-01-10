@@ -25,10 +25,21 @@
         </form>
     </div>
     <div ng-show="newUser">
-        New User
-    </div>
-    <div ng-show="forgot">
-        Forgot Password
+        <ul class="tab">
+            <li><a class="tablinks" ng-click="showDiv='creds'">Credentials</a></li>
+            <li><a class="tablinks" ng-click="showDiv='person'">PersonalDetails</a></li>
+            <li><a class="tablinks" ng-click="showDiv='residential'">ResidentialAdress</a></li>
+        </ul>
+        <div class="tabcontent" ng-show="showDiv === 'creds'">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+        </div>
+        <div class="tabcontent" ng-show="showDiv === 'person'">
+            <p>Give your Personal details!!!</p>
+        </div>
+        <div class="tabcontent" ng-show="showDiv === 'residential'">
+            <p>Give your Residential details!!</p>
+        </div>
     </div>
 </div>
 </body>
